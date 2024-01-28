@@ -22,7 +22,7 @@ function Galerie() {
     isLoading,
     error,
     fetchData, // Destructure the fetchData function from the hook
-  } = useFetch("http://localhost:3000/api/projects");
+  } = useFetch("https://apiportfolio-10b0ce5793e3.herokuapp.com/api/projects");
 
   useEffect(() => {
     if (projectArray) {

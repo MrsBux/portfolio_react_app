@@ -60,14 +60,17 @@ function ModaleAdmin({ closeModal, updateProject }) {
 
       console.log("FormData avant envoi :", formDataToSend);
 
-      const response = await fetch("http://localhost:3000/api/projects", {
-        method: "POST",
-        headers: {
-          accept: "*/*",
-          Authorization: `Bearer ${token}`,
-        },
-        body: formDataToSend,
-      });
+      const response = await fetch(
+        "https://apiportfolio-10b0ce5793e3.herokuapp.com/api/projects",
+        {
+          method: "POST",
+          headers: {
+            accept: "*/*",
+            Authorization: `Bearer ${token}`,
+          },
+          body: formDataToSend,
+        }
+      );
 
       if (!response.ok) {
         const errorText = await response.text();

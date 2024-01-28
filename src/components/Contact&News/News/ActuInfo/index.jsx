@@ -19,13 +19,16 @@ function ActuInfo({ id, title, description, date, closeModal, updateNews }) {
       }
 
       // Envoyer la demande de suppression au serveur
-      const response = await fetch(`http://localhost:3000/api/actus/${id}`, {
-        method: "DELETE",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
-      });
+      const response = await fetch(
+        `https://apiportfolio-10b0ce5793e3.herokuapp.com/api/actus/${id}`,
+        {
+          method: "DELETE",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
 
       if (!response.ok) {
         throw new Error(`Erreur HTTP! Statut : ${response.status}`);

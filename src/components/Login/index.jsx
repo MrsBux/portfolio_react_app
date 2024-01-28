@@ -32,13 +32,16 @@ function Loginf() {
       console.log("Données du formulaire avant envoi :", formData);
 
       // Votre logique de requête
-      const responsemdp = await fetch("http://localhost:3000/api/auth/login", {
-        method: "POST",
-        body: JSON.stringify({ email, password }), // Utilisez les variables
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const responsemdp = await fetch(
+        "https://apiportfolio-10b0ce5793e3.herokuapp.com/api/auth/login",
+        {
+          method: "POST",
+          body: JSON.stringify({ email, password }), // Utilisez les variables
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
       //traduction de la réponse en json
       const responseBody = await responsemdp.json();

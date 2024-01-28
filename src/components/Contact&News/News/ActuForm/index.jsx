@@ -22,14 +22,17 @@ function ActuForm({ closeModal, updateNews }) {
       }
 
       // Envoi des données au serveur avec le token d'authentification
-      const response = await fetch("http://localhost:3000/api/actus", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`, // Ajout du token d'authentification
-        },
-        body: JSON.stringify({ title, description, date }),
-      });
+      const response = await fetch(
+        "https://apiportfolio-10b0ce5793e3.herokuapp.com/api/actus",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`, // Ajout du token d'authentification
+          },
+          body: JSON.stringify({ title, description, date }),
+        }
+      );
 
       if (!response.ok) {
         throw new Error(`Erreur HTTP! Statut : ${response.status}`);

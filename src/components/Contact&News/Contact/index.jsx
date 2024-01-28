@@ -16,13 +16,16 @@ function Contact() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:3000/api/formcontact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://apiportfolio-10b0ce5793e3.herokuapp.com/api/formcontact",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       if (response.ok) {
         console.log("Formulaire soumis avec succès !");
