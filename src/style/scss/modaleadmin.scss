@@ -1,0 +1,46 @@
+.Modaladmin {
+  overflow: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  border: 5px solid #045254;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  background-color: #ffebe2;
+  color: #bf045e;
+  width: 55%;
+  z-index: 1000; /* Ajustez selon vos besoins */
+  max-width: 90vw; /* Ajustez selon vos besoins */
+  max-height: 90vh; /* Ajustez selon vos besoins */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  &__btn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  &__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.Modaladmin #btn {
+  background-color: #045254;
+  border: 1px solid #bf045e;
+  color: #ffebe2;
+}
+
+.Modaladmin label {
+  padding-top: 20px;
+}

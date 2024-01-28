@@ -1,0 +1,17 @@
+.loginbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loginbox__form {
+  width: 70%;
+  padding: 20px;
+}
+.loginbox__form__btn {
+  background-color: #bf045e;
+  min-width: 20%;
+  margin-top: 25px;
+}
+
+/*# sourceMappingURL=loginf.css.map */

@@ -1,0 +1,19 @@
+body {
+  margin: 0px;
+  width: 100%;
+  font-family: "Manrope";
+}
+
+a {
+  cursor: pointer;
+  font-family: "Lato";
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0px;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,37 @@
+.competencescards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  border: 1px #a2bdb0 solid;
+  border-radius: 10px;
+  padding: 5%;
+
+  @media all and (min-width: 701px) and (max-width: 950px) {
+    gap: 3%;
+  }
+  @media all and (max-width: 700px) {
+    border-radius: 0px;
+    width: 100%;
+    border: none;
+    border-top: #a2bdb0 2px solid;
+  }
+
+  &__title {
+    color: #bf045e;
+    font-size: 32px;
+  }
+
+  &__btn__Front-end {
+    background-color: #ef6400;
+  }
+
+  &__btn__Back-end {
+    background-color: #078286;
+  }
+
+  &__btn__Outils {
+    background-color: #bf045e;
+  }
+}

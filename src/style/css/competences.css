@@ -1,0 +1,51 @@
+.competencesArea {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  padding-bottom: 5%;
+}
+@media all and (min-width: 701px) and (max-width: 950px) {
+  .competencesArea {
+    gap: 30px;
+  }
+}
+@media all and (max-width: 700px) {
+  .competencesArea {
+    gap: 10px;
+    padding: 0px;
+  }
+}
+.competencesArea__title {
+  color: #bf045e;
+}
+@media all and (max-width: 700px) {
+  .competencesArea__title {
+    padding: 20px;
+  }
+}
+.competencesArea__cards {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+@media all and (min-width: 701px) and (max-width: 950px) {
+  .competencesArea__cards {
+    gap: 3%;
+  }
+}
+@media all and (max-width: 700px) {
+  .competencesArea__cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+  }
+}
+
+/*# sourceMappingURL=competences.css.map */

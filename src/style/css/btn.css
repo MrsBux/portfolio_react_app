@@ -1,0 +1,24 @@
+#btn {
+  height: 50px;
+  border-radius: 30px;
+  padding: 5px 15px 5px 15px;
+  border: none;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope";
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #ffebe2;
+}
+@media all and (max-width: 600px) {
+  #btn {
+    width: fit-content;
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=btn.css.map */

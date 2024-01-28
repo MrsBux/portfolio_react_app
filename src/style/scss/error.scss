@@ -1,0 +1,63 @@
+$main-color: #025254;
+
+.BE {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  color: $main-color;
+  margin: 117.5px;
+  width: fit-content;
+
+  @media all and (max-width: 640px) {
+    margin: 100px 20px;
+  }
+
+  &__code {
+    font-size: 288px;
+    font-weight: 700;
+    padding: 20px;
+    margin: 0px;
+  }
+
+  &__txt {
+    font-size: 36px;
+    padding-bottom: 60px;
+
+    @media all and (min-width: 769px) and (max-width: 1024px) {
+      font-size: 30px;
+    }
+
+    @media all and (min-width: 641px) and (max-width: 768px) {
+      font-size: 24px;
+    }
+
+    @media all and (max-width: 640px) {
+      font-size: 18px;
+      text-align: center;
+      padding-bottom: 55px;
+    }
+  }
+
+  &__link {
+    font-size: 18px;
+    color: $main-color;
+
+    @media all and (min-width: 641px) and (max-width: 768px) {
+      font-size: 16px;
+    }
+
+    @media all and (max-width: 640px) {
+      font-size: 14px;
+      padding-bottom: 50px;
+    }
+  }
+}

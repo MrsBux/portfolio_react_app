@@ -1,0 +1,40 @@
+.testContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  padding: 30px;
+}
+.testContainer__title {
+  color: #ffebe2;
+  font-family: "Lato";
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+.testContainer__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.testContainer__form__btn {
+  background-color: #bf045e;
+}
+
+.form-label {
+  color: #045254;
+}
+
+.form-group {
+  width: 100%;
+}
+
+#form-controle {
+  background-color: #ffebe2;
+  color: #045254;
+}
+
+/*# sourceMappingURL=test.css.map */

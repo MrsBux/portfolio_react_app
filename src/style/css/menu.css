@@ -1,0 +1,31 @@
+.menu {
+  margin: 30px;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.menu .accordion-button {
+  background-color: #025254;
+  color: #ffebe2;
+  font-size: 20px;
+}
+
+.menu .accordion-button::after {
+  color: #ffebe2;
+}
+
+.menu .accordion-button[aria-expanded=true] {
+  background-color: #078286;
+  color: #ffebe2;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.menu .accordion-collapse {
+  color: #025254;
+  background-color: #ffebe2;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+/*# sourceMappingURL=menu.css.map */

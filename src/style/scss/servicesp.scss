@@ -1,0 +1,47 @@
+.servbox {
+  @media all and (min-width: 701px) and (max-width: 950px) {
+    margin: 0px 25px;
+  }
+  @media all and (max-width: 700px) {
+    border-radius: 0px;
+    margin: 0px;
+  }
+  &__title {
+    padding: 50px;
+    color: #bf045e;
+    font-size: 40px;
+  }
+}
+
+.methode {
+  @media all and (min-width: 701px) and (max-width: 950px) {
+    margin: 0px 25px;
+  }
+  @media all and (max-width: 700px) {
+    border-radius: 0px;
+    margin: 0px;
+  }
+  background-color: #ef6400;
+  padding: 20px;
+  margin: 30px 50px;
+  color: #ffebe2;
+  border-radius: 10px;
+}
+
+.faq {
+  @media all and (min-width: 701px) and (max-width: 950px) {
+    margin: 0px 25px;
+  }
+  @media all and (max-width: 700px) {
+    border-radius: 0px;
+    margin: 0px;
+  }
+  background-color: #a2bdb0;
+  padding: 20px;
+  margin: 20px 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

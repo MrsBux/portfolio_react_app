@@ -1,0 +1,48 @@
+.actu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+}
+.actu__box {
+  border: #045254 solid 1px;
+  border-radius: 10px;
+  background-color: #045254;
+  padding: 10px;
+  width: 100%;
+  color: #ffebe2;
+  font-family: "Lato";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 90px;
+  cursor: pointer;
+}
+.actu__box__title {
+  font-size: 28px;
+  padding: 0px;
+}
+.actu__box__description__p {
+  margin: 0px;
+}
+.actu__date {
+  border: #bf045e solid 1px;
+  border-radius: 10px;
+  background-color: #bf045e;
+  padding: 10px;
+  color: #ffebe2;
+  font-family: "Lato";
+  min-height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.actu__date__p {
+  margin: 0px;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=actuitem.css.map */

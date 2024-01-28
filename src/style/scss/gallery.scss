@@ -1,0 +1,63 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  @media all and (min-width: 701px) and (max-width: 950px) {
+    gap: 25px;
+  }
+  @media all and (max-width: 700px) {
+    gap: 0px;
+  }
+
+  &__navpagebar {
+    width: 100%;
+  }
+
+  &__title {
+    color: #bf045e;
+    font-size: 44px;
+    font-weight: 800;
+    margin: 0px;
+    padding: 0px;
+
+    @media all and (max-width: 950px) {
+      font-size: 36px;
+      padding: 20px;
+      text-align: center;
+    }
+  }
+
+  &__portfolio {
+    width: 100%;
+    @media all and (min-width: 701px) and (max-width: 950px) {
+      margin: 0px 25px;
+    }
+    @media all and (max-width: 700px) {
+      border-radius: 0px;
+      margin: 0px;
+    }
+  }
+
+  &__contactgallery {
+    background-color: #bf045e;
+    min-height: 580px;
+    width: 65%;
+    border-radius: 10px;
+
+    @media all and (min-width: 701px) and (max-width: 950px) {
+      margin: 0px 25px;
+    }
+    @media all and (max-width: 700px) {
+      width: 100%;
+      border-radius: 0px;
+      margin: 0px;
+    }
+  }
+}
+
+body.modal-open {
+  overflow: hidden; /* Empêche le défilement de la page principale lorsque la modale est ouverte */
+}

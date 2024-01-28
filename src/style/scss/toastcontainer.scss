@@ -1,0 +1,29 @@
+// styles/toastify.scss
+
+$toast-container-background: #333;
+$toast-container-text-color: #fff;
+$toast-background: #444;
+$toast-border: #555;
+$toast-text-color: #fff;
+$toast-success-background: #28a745;
+$toast-success-border: #218838;
+$toast-success-text-color: #fff;
+
+.Toastify__toast-container {
+  background-color: $toast-container-background;
+  color: $toast-container-text-color;
+
+  .Toastify__toast {
+    background-color: $toast-background;
+    border: 1px solid $toast-border;
+    color: $toast-text-color;
+
+    &--success {
+      background-color: $toast-success-background;
+      border: 1px solid $toast-success-border;
+      color: $toast-success-text-color;
+    }
+
+    /* Ajoutez d'autres styles au besoin */
+  }
+}

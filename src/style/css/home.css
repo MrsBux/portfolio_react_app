@@ -1,0 +1,91 @@
+main,
+h1 {
+  background-color: #ffebe2;
+  margin: 0px;
+  padding: 0px 0px 50px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+@media all and (min-width: 701px) and (max-width: 950px) {
+  main,
+  h1 {
+    gap: 20px;
+  }
+}
+@media all and (max-width: 700px) {
+  main,
+  h1 {
+    gap: 0px;
+    padding: 0px;
+  }
+}
+
+.Apropos {
+  border: solid 3px #045254;
+  border-radius: 10px;
+  margin: 0px 50px;
+}
+@media all and (min-width: 701px) and (max-width: 950px) {
+  .Apropos {
+    margin: 0px 25px;
+  }
+}
+@media all and (max-width: 700px) {
+  .Apropos {
+    border-radius: 0px;
+    margin: 0px;
+  }
+}
+
+.competences {
+  border: solid 3px #045254;
+  border-radius: 10px;
+  margin: 0px 50px;
+}
+@media all and (min-width: 701px) and (max-width: 950px) {
+  .competences {
+    margin: 0px 25px;
+  }
+}
+@media all and (max-width: 700px) {
+  .competences {
+    border: none;
+    border-bottom: #045254 3px solid;
+    border-radius: 0px;
+    margin: 0px;
+  }
+}
+
+.services {
+  border-radius: 10px;
+  margin: 0px 50px;
+}
+@media all and (min-width: 701px) and (max-width: 950px) {
+  .services {
+    margin: 0px 25px;
+  }
+}
+@media all and (max-width: 700px) {
+  .services {
+    border-radius: 0px;
+    margin: 0px;
+  }
+}
+
+.contactetnews {
+  margin: 0px 50px;
+}
+@media all and (min-width: 701px) and (max-width: 950px) {
+  .contactetnews {
+    margin: 0px 25px;
+  }
+}
+@media all and (max-width: 700px) {
+  .contactetnews {
+    border-radius: 0px;
+    margin: 0px;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

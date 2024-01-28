@@ -1,0 +1,39 @@
+.navbarpage {
+  background-color: #bf045e;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px 0px 20px 0px;
+}
+@media all and (max-width: 640px) {
+  .navbarpage {
+    display: none;
+  }
+}
+
+.navbarpage__link {
+  color: #ffebe2;
+  font-size: 20px;
+  font-weight: 600;
+  /* Ajoutez d'autres styles pour les liens au besoin */
+}
+
+@media all and (min-width: 640px) {
+  .navbarmobile {
+    display: none;
+  }
+}
+@media all and (max-width: 640px) {
+  .navbarmobile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.mr-auto {
+  color: #ffebe2;
+}
+
+/*# sourceMappingURL=navigation.css.map */

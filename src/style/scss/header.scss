@@ -1,0 +1,76 @@
+header {
+  background-color: #ffebe2;
+
+  padding: 50px 50px 0px 50px;
+
+  @media all and (min-width: 769px) and (max-width: 1024px) {
+    padding: 40px 40px 0px 40px;
+  }
+
+  @media all and (min-width: 641px) and (max-width: 768px) {
+    padding: 30px 30px 0px 30px;
+  }
+
+  @media all and (max-width: 640px) {
+    padding: 20px 20px 0px 20px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    @media all and (min-width: 769px) and (max-width: 900px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media all and (min-width: 641px) and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    @media all and (max-width: 640px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    &__menu {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+
+      &__link {
+        text-decoration: none;
+      }
+    }
+
+    &__logo {
+      @media all and (max-width: 640px) {
+        max-width: 350px;
+      }
+    }
+  }
+}
+a {
+  color: #045254;
+  font-size: 24px;
+  @media all and (max-width: 640px) {
+    max-width: 350px;
+  }
+}
+
+img {
+  @media all and (max-width: 640px) {
+    max-width: 350px;
+  }
+}

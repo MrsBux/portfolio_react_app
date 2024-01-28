@@ -1,0 +1,59 @@
+.galeriebox {
+  width: 65%;
+  background-color: #a2bdb0;
+  padding: 50px 30px 30px 30px;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+@media all and (min-width: 1025px) and (max-width: 1152px) {
+  .galeriebox {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+}
+@media all and (min-width: 811px) and (max-width: 1024px) {
+  .galeriebox {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+}
+@media all and (max-width: 810px) {
+  .galeriebox {
+    width: 100%;
+    padding: 70px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px;
+  }
+}
+.galeriebox__btn__plusmoins {
+  background-color: #bf045e;
+}
+.galeriebox__btn__modaladmin {
+  margin-top: 30px;
+  background-color: #bf045e;
+}
+.galeriebox__btn__modaladmin__btn__modaladmin {
+  margin-top: 30px;
+  background-color: #bf045e;
+}
+
+.not-logged {
+  display: none;
+}
+
+.logged {
+  display: block;
+}
+
+/*# sourceMappingURL=galerie.css.map */

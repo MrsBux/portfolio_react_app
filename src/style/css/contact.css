@@ -1,0 +1,62 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  padding: 30px 50px;
+  gap: 10px;
+}
+.contact__title {
+  color: #ffebe2;
+  font-family: "Lato";
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+.contact__subtitle {
+  color: #ffebe2;
+  font-family: "Lato";
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+.contact__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.contact__form__nomprenom {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.contact__form__btn {
+  background-color: orangered;
+}
+
+.form-label {
+  color: #045254;
+}
+
+.form-group {
+  width: 100%;
+}
+
+#form-controle {
+  background-color: #ffebe2;
+  color: #045254;
+}
+
+#form-controle-msg {
+  background-color: #ffebe2;
+  min-height: 130px;
+}
+
+/*# sourceMappingURL=contact.css.map */

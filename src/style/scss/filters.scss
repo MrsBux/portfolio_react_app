@@ -1,0 +1,30 @@
+.filtersbox {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  @media all and (max-width: 810px) {
+    padding-top: 20px;
+  }
+
+  &__tag {
+    background-color: #045254;
+    margin-top: 30px;
+
+    &__tous {
+      background-color: #078286;
+      margin-top: 30px;
+    }
+
+    &__plus,
+    &__moins {
+      margin-top: 30px;
+
+      background-color: #bf045e;
+    }
+  }
+}

@@ -1,0 +1,87 @@
+.servicesdbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+  padding-top: 50px;
+
+  @media all and (max-width: 880px) {
+    padding-top: 0px;
+    gap: 0px;
+  }
+}
+
+.servicesdbox1,
+.servicesdbox3,
+.servicesdbox5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+
+  @media all and (max-width: 880px) {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0px;
+  }
+
+  &__logo {
+    padding: 100px;
+  }
+
+  &__details {
+    padding: 50px;
+    background-color: #045254;
+    color: #ffebe2;
+    font-size: 20px;
+    font-family: "Manrope";
+    text-align: justify;
+    font-weight: 400;
+    @media all and (max-width: 880px) {
+      font-size: 18px;
+    }
+
+    &__btn {
+      background-color: #bf045e;
+    }
+  }
+}
+
+.servicesdbox2,
+.servicesdbox4,
+.servicesdbox6 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+
+  @media all and (max-width: 880px) {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0px;
+  }
+
+  &__logo {
+    padding: 100px;
+  }
+
+  &__details {
+    padding: 50px;
+    background-color: #045254;
+    color: #ffebe2;
+    font-size: 20px;
+    font-family: "Manrope";
+    text-align: justify;
+    font-weight: 400;
+    @media all and (max-width: 880px) {
+      font-size: 18px;
+    }
+
+    &__btn {
+      background-color: #bf045e;
+    }
+  }
+}

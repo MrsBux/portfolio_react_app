@@ -1,0 +1,53 @@
+.actu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+
+  &__box {
+    border: #045254 solid 1px;
+    border-radius: 10px;
+    background-color: #045254;
+    padding: 10px;
+    width: 100%;
+    color: #ffebe2;
+    font-family: "Lato";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 90px;
+    cursor: pointer;
+
+    &__title {
+      font-size: 28px;
+      padding: 0px;
+    }
+
+    &__description {
+      &__p {
+        margin: 0px;
+      }
+    }
+  }
+
+  &__date {
+    border: #bf045e solid 1px;
+    border-radius: 10px;
+    background-color: #bf045e;
+    padding: 10px;
+    color: #ffebe2;
+    font-family: "Lato";
+    min-height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__p {
+      margin: 0px;
+      font-weight: 600;
+    }
+  }
+}

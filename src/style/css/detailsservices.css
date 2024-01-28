@@ -1,0 +1,110 @@
+.servicesdbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+  padding-top: 50px;
+}
+@media all and (max-width: 880px) {
+  .servicesdbox {
+    padding-top: 0px;
+    gap: 0px;
+  }
+}
+
+.servicesdbox1,
+.servicesdbox3,
+.servicesdbox5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+@media all and (max-width: 880px) {
+  .servicesdbox1,
+  .servicesdbox3,
+  .servicesdbox5 {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0px;
+  }
+}
+.servicesdbox1__logo,
+.servicesdbox3__logo,
+.servicesdbox5__logo {
+  padding: 100px;
+}
+.servicesdbox1__details,
+.servicesdbox3__details,
+.servicesdbox5__details {
+  padding: 50px;
+  background-color: #045254;
+  color: #ffebe2;
+  font-size: 20px;
+  font-family: "Manrope";
+  text-align: justify;
+  font-weight: 400;
+}
+@media all and (max-width: 880px) {
+  .servicesdbox1__details,
+  .servicesdbox3__details,
+  .servicesdbox5__details {
+    font-size: 18px;
+  }
+}
+.servicesdbox1__details__btn,
+.servicesdbox3__details__btn,
+.servicesdbox5__details__btn {
+  background-color: #bf045e;
+}
+
+.servicesdbox2,
+.servicesdbox4,
+.servicesdbox6 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+@media all and (max-width: 880px) {
+  .servicesdbox2,
+  .servicesdbox4,
+  .servicesdbox6 {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0px;
+  }
+}
+.servicesdbox2__logo,
+.servicesdbox4__logo,
+.servicesdbox6__logo {
+  padding: 100px;
+}
+.servicesdbox2__details,
+.servicesdbox4__details,
+.servicesdbox6__details {
+  padding: 50px;
+  background-color: #045254;
+  color: #ffebe2;
+  font-size: 20px;
+  font-family: "Manrope";
+  text-align: justify;
+  font-weight: 400;
+}
+@media all and (max-width: 880px) {
+  .servicesdbox2__details,
+  .servicesdbox4__details,
+  .servicesdbox6__details {
+    font-size: 18px;
+  }
+}
+.servicesdbox2__details__btn,
+.servicesdbox4__details__btn,
+.servicesdbox6__details__btn {
+  background-color: #bf045e;
+}
+
+/*# sourceMappingURL=detailsservices.css.map */
