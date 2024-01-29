@@ -64,6 +64,8 @@
   .aproposbox__infos {
     width: 100%;
     gap: 35px;
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 @media all and (max-width: 600px) {

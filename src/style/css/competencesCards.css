@@ -25,6 +25,10 @@
     border: none;
     border-top: #a2bdb0 2px solid;
   }
+  .competencescards:hover {
+    transform: scale(1.075);
+    border: 5px #a2bdb0 solid;
+  }
 }
 .competencescards__title {
   color: #bf045e;

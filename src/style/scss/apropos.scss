@@ -54,6 +54,8 @@
     @media all and (max-width: 800px) {
       width: 100%;
       gap: 35px;
+      display: flex;
+      flex-direction: column-reverse;
     }
     @media all and (max-width: 600px) {
       width: 100%;

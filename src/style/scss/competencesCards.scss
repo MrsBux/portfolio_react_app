@@ -21,6 +21,10 @@
     width: 100%;
     border: none;
     border-top: #a2bdb0 2px solid;
+    &:hover {
+      transform: scale(1.075);
+      border: 5px #a2bdb0 solid;
+    }
   }
 
   &__title {

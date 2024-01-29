@@ -25,6 +25,13 @@
       transform: scale(1.05);
     }
 
+    @media all and (max-width: 800px) {
+      &:hover {
+        transform: scale(1.01);
+        width: 60%;
+      }
+    }
+
     &__title {
       font-size: 28px;
       padding: 0px;
