@@ -64,7 +64,7 @@ function DetailsServices({}) {
             approche comprend une optimisation minutieuse du code, la gestion
             des ressources multimédias et l'application de pratiques avancées.
             Fournissant une documentation complète et des rapports détaillés, je
-            vous offre une visibilité claire sur les améliorations apportées.""
+            vous offre une visibilité claire sur les améliorations apportées."
           </p>
           <Link to="/gallery">
             <Btn

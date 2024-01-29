@@ -1,3 +1,6 @@
+$cd-txt--invalid: #fff;
+$cd-danger: red;
+
 .testContainer {
   display: flex;
   flex-direction: column;
@@ -20,6 +23,20 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+
+    & input {
+      outline: none;
+      width: 100%;
+      transition: background-color 500ms;
+      &:focus {
+        border: 2px solid #045254;
+      }
+      &:not(:focus):invalid {
+        background-color: $cd-danger;
+        border: 2px solid $cd-danger;
+        color: $cd-txt--invalid;
+      }
+    }
 
     &__btn {
       background-color: #bf045e;

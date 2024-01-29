@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import ModaleInfo from "../ModaleInfo/index.jsx";
 import "../../../style/css/galerie.css";
-import essai1 from "../../../assets/back.webp";
-import essai2 from "../../../assets/front.webp";
 import CartP from "./CartP/index.jsx";
 import Btn from "../../btn/boutons.jsx";
 import ModaleAdmin from "../ModaleAdmin/index.jsx";
 import useAuthStore from "../../../stores/authStore.js";
 import { useFetch } from "../../../utils/hooks/index.jsx";
+import apiRoutes from "../../../utils/apiRoutes.js";
 
 function Galerie() {
   const [showModalProject, setShowModalProject] = useState(false);
@@ -22,7 +21,7 @@ function Galerie() {
     isLoading,
     error,
     fetchData, // Destructure the fetchData function from the hook
-  } = useFetch("https://apiportfolio-10b0ce5793e3.herokuapp.com/api/projects");
+  } = useFetch(apiRoutes.projects);
 
   useEffect(() => {
     if (projectArray) {

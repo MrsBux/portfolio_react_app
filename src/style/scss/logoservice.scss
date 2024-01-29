@@ -3,10 +3,9 @@
   width: 75px;
   height: 75px;
   perspective: 100px;
-  transition: transform 1s;
-
+  transition: transform 750ms;
   &.flipped {
-    transform: rotateY(180deg);
+    transform: scale(1.15) rotateY(180deg) translateY(-30px);
   }
 
   .logoService {

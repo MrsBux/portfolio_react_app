@@ -3,6 +3,7 @@ import "../../../style/css/test.css";
 import "bootstrap/dist/css/bootstrap.css";
 import Form from "react-bootstrap/Form";
 import Btn from "../../btn/boutons";
+import apiRoutes from "../../../utils/apiRoutes";
 
 function Test() {
   const [formData, setFormData] = useState({
@@ -14,16 +15,13 @@ function Test() {
     e.preventDefault();
 
     try {
-      const response = await fetch(
-        "https://apiportfolio-10b0ce5793e3.herokuapp.com/api/formtest",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
+      const response = await fetch(apiRoutes.formTest, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
       if (response.ok) {
         console.log("Formulaire soumis avec succès !");

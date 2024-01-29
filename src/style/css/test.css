@@ -20,6 +20,19 @@
   align-items: center;
   gap: 20px;
 }
+.testContainer__form input {
+  outline: none;
+  width: 100%;
+  transition: background-color 500ms;
+}
+.testContainer__form input:focus {
+  border: 2px solid #045254;
+}
+.testContainer__form input:not(:focus):invalid {
+  background-color: red;
+  border: 2px solid red;
+  color: #fff;
+}
 .testContainer__form__btn {
   background-color: #bf045e;
 }

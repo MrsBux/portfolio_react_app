@@ -39,8 +39,16 @@
     font-family: "Manrope";
     text-align: justify;
     font-weight: 400;
+    transition: transform 400ms;
+    &:hover {
+      transform: translateX(-150px) scale(1.15);
+    }
+
     @media all and (max-width: 880px) {
       font-size: 18px;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
 
     &__btn {
@@ -76,8 +84,16 @@
     font-family: "Manrope";
     text-align: justify;
     font-weight: 400;
+    transition: transform 400ms;
+    &:hover {
+      transform: translateX(150px) scale(1.15);
+    }
+
     @media all and (max-width: 880px) {
       font-size: 18px;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
 
     &__btn {

@@ -29,6 +29,19 @@
   align-items: center;
   gap: 10px;
 }
+.contact__form input {
+  outline: none;
+  width: 100%;
+  transition: background-color 500ms;
+}
+.contact__form input:focus {
+  border: 2px solid #045254;
+}
+.contact__form input:not(:focus):invalid {
+  background-color: red;
+  border: 2px solid red;
+  color: #fff;
+}
 .contact__form__nomprenom {
   width: 100%;
   display: flex;

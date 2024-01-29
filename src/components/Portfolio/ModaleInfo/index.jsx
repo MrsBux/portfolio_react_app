@@ -4,6 +4,7 @@ import Btn from "../../btn/boutons.jsx";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import useAuthStore from "../../../stores/authStore.js";
+import apiRoutes from "../../../utils/apiRoutes.js";
 
 function ModaleInfo({
   id,
@@ -34,16 +35,13 @@ function ModaleInfo({
       }
 
       // Envoyer la demande de suppression au serveur
-      const response = await fetch(
-        `https://apiportfolio-10b0ce5793e3.herokuapp.com/api/projects/${id}`,
-        {
-          method: "DELETE",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
-          },
-        }
-      );
+      const response = await fetch(apiRoutes.singleProject(id), {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+      });
 
       if (!response.ok) {
         throw new Error(`Erreur HTTP! Statut : ${response.status}`);

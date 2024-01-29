@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import Form from "react-bootstrap/Form";
 import Btn from "../../btn/boutons.jsx";
 import "../../../style/css/modaleadmin.css";
+import apiRoutes from "../../../utils/apiRoutes.js";
 
 function ModaleAdmin({ closeModal, updateProject }) {
   const [title, setTitle] = useState("");
@@ -60,17 +61,14 @@ function ModaleAdmin({ closeModal, updateProject }) {
 
       console.log("FormData avant envoi :", formDataToSend);
 
-      const response = await fetch(
-        "https://apiportfolio-10b0ce5793e3.herokuapp.com/api/projects",
-        {
-          method: "POST",
-          headers: {
-            accept: "*/*",
-            Authorization: `Bearer ${token}`,
-          },
-          body: formDataToSend,
-        }
-      );
+      const response = await fetch(apiRoutes.projects, {
+        method: "POST",
+        headers: {
+          accept: "*/*",
+          Authorization: `Bearer ${token}`,
+        },
+        body: formDataToSend,
+      });
 
       if (!response.ok) {
         const errorText = await response.text();

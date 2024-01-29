@@ -3,6 +3,7 @@ import "../../../style/css/contact.css";
 import "bootstrap/dist/css/bootstrap.css";
 import Form from "react-bootstrap/Form";
 import Btn from "../../btn/boutons";
+import apiRoutes from "../../../utils/apiRoutes";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -16,16 +17,13 @@ function Contact() {
     e.preventDefault();
 
     try {
-      const response = await fetch(
-        "https://apiportfolio-10b0ce5793e3.herokuapp.com/api/formcontact",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
+      const response = await fetch(apiRoutes.formContact, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
       if (response.ok) {
         console.log("Formulaire soumis avec succès !");

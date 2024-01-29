@@ -10,7 +10,7 @@ function Splash() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setRedirect(true);
-    }, 3000);
+    }, 5000);
 
     return () => clearTimeout(timeout);
   }, []);
@@ -21,7 +21,7 @@ function Splash() {
 
   useEffect(() => {
     if (redirect) {
-      navigate("/");
+      navigate("/home");
     }
   }, [redirect, navigate]);
 

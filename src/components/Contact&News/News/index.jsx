@@ -6,6 +6,7 @@ import ActuInfo from "./ActuInfo/index.jsx";
 import ActuForm from "./ActuForm/index.jsx";
 import useAuthStore from "../../../stores/authStore.js";
 import { useFetch } from "../../../utils/hooks/index.jsx";
+import apiRoutes from "../../../utils/apiRoutes.js";
 
 function News() {
   const [showModalActu, setShowModalActu] = useState(false);
@@ -20,7 +21,7 @@ function News() {
     isLoading,
     error,
     fetchData, // Destructure the fetchData function from the hook
-  } = useFetch("https://apiportfolio-10b0ce5793e3.herokuapp.com/api/actus");
+  } = useFetch(apiRoutes.actus);
 
   useEffect(() => {
     if (actusData) {

@@ -9,6 +9,10 @@ a {
   cursor: pointer;
   font-family: "Lato";
   text-decoration: none;
+  transition: transform 400ms;
+  &:hover {
+    transform: scale(1.25);
+  }
 }
 
 h2 {

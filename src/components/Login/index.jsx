@@ -4,7 +4,8 @@ import "bootstrap/dist/css/bootstrap.css";
 import Form from "react-bootstrap/Form";
 import Btn from "../btn/boutons.jsx";
 import "../../style/css/loginf.css";
-import useAuthStore from "../../stores/authStore.js"; // Assurez-vous de spécifier le bon chemin
+import useAuthStore from "../../stores/authStore.js";
+import apiRoutes from "../../utils/apiRoutes.js";
 
 function Loginf() {
   const { isAdminLoggedIn, login, logout } = useAuthStore();
@@ -32,16 +33,13 @@ function Loginf() {
       console.log("Données du formulaire avant envoi :", formData);
 
       // Votre logique de requête
-      const responsemdp = await fetch(
-        "https://apiportfolio-10b0ce5793e3.herokuapp.com/api/auth/login",
-        {
-          method: "POST",
-          body: JSON.stringify({ email, password }), // Utilisez les variables
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
+      const responsemdp = await fetch(apiRoutes.login, {
+        method: "POST",
+        body: JSON.stringify({ email, password }), // Utilisez les variables
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
 
       //traduction de la réponse en json
       const responseBody = await responsemdp.json();

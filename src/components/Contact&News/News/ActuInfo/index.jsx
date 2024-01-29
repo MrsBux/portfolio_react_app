@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import useAuthStore from "../../../../stores/authStore.js";
 import Btn from "../../../btn/boutons.jsx";
 import "../../../../style/css/actuinfo.css";
+import apiRoutes from "../../../../utils/apiRoutes.js";
 
 function ActuInfo({ id, title, description, date, closeModal, updateNews }) {
   const { isAdminLoggedIn, login, logout } = useAuthStore();
@@ -19,16 +20,13 @@ function ActuInfo({ id, title, description, date, closeModal, updateNews }) {
       }
 
       // Envoyer la demande de suppression au serveur
-      const response = await fetch(
-        `https://apiportfolio-10b0ce5793e3.herokuapp.com/api/actus/${id}`,
-        {
-          method: "DELETE",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
-          },
-        }
-      );
+      const response = await fetch(apiRoutes.singleActu(id), {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+      });
 
       if (!response.ok) {
         throw new Error(`Erreur HTTP! Statut : ${response.status}`);

@@ -7,12 +7,12 @@ function Header() {
     <header>
       <div className="navbar">
         <div className="navbar__logo">
-          <Link to="/">
+          <Link to="/home">
             <img src={logo} alt="logo bux web compagnie"></img>
           </Link>
         </div>
         <nav className="navbar__menu">
-          <Link to="/" className="navbar__menu__link">
+          <Link to="/home" className="navbar__menu__link">
             Accueil
           </Link>
           <Link to="/gallery" className="navbar__menu__link">

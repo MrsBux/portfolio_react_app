@@ -46,12 +46,23 @@
   font-family: "Manrope";
   text-align: justify;
   font-weight: 400;
+  transition: transform 400ms;
+}
+.servicesdbox1__details:hover,
+.servicesdbox3__details:hover,
+.servicesdbox5__details:hover {
+  transform: translateX(-150px) scale(1.15);
 }
 @media all and (max-width: 880px) {
   .servicesdbox1__details,
   .servicesdbox3__details,
   .servicesdbox5__details {
     font-size: 18px;
+  }
+  .servicesdbox1__details:hover,
+  .servicesdbox3__details:hover,
+  .servicesdbox5__details:hover {
+    transform: scale(1.1);
   }
 }
 .servicesdbox1__details__btn,
@@ -93,12 +104,23 @@
   font-family: "Manrope";
   text-align: justify;
   font-weight: 400;
+  transition: transform 400ms;
+}
+.servicesdbox2__details:hover,
+.servicesdbox4__details:hover,
+.servicesdbox6__details:hover {
+  transform: translateX(150px) scale(1.15);
 }
 @media all and (max-width: 880px) {
   .servicesdbox2__details,
   .servicesdbox4__details,
   .servicesdbox6__details {
     font-size: 18px;
+  }
+  .servicesdbox2__details:hover,
+  .servicesdbox4__details:hover,
+  .servicesdbox6__details:hover {
+    transform: scale(1.1);
   }
 }
 .servicesdbox2__details__btn,

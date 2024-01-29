@@ -8,6 +8,10 @@
   background-color: #025254;
   color: #ffebe2;
   font-size: 20px;
+  transition: transform 400ms;
+  &:hover {
+    transform: scale(1.075);
+  }
 }
 
 .menu .accordion-button::after {
