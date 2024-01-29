@@ -106,7 +106,8 @@ function Contact() {
           <Form.Label htmlFor="message"> </Form.Label>
           <Form.Control
             id="message"
-            type="text"
+            as="textarea"
+            rows={4}
             placeholder="Votre message"
             name="message"
             value={formData.message}

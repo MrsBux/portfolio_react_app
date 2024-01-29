@@ -59,7 +59,7 @@
     }
 
     &__p {
-      font-size: 22px;
+      font-size: 28px;
       font-weight: 600;
     }
 
@@ -87,13 +87,13 @@
   }
 
   &__details {
-    margin-top: 40px;
+    margin: 40px 0px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-    gap: 20%;
+    gap: 5%;
 
     @media all and (max-width: 910px) {
       padding: 10px 30px;
@@ -111,7 +111,7 @@
     }
 
     &__1 {
-      width: 40%;
+      width: 60%;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -127,13 +127,17 @@
       &__box {
         border: #bf045e 1px solid;
         border-radius: 10px;
-        padding: 10px;
+        padding: 20px;
         background-color: #ffebe2;
+
+        &__p {
+          font-size: 22px;
+        }
       }
     }
 
     &__2 {
-      width: 40%;
+      width: 35%;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -148,8 +152,11 @@
       &__box {
         border: #bf045e 1px solid;
         border-radius: 10px;
-        padding: 10px;
+        padding: 15px;
         background-color: #ffebe2;
+        &__p {
+          font-size: 22px;
+        }
       }
       &__btn {
         display: flex;

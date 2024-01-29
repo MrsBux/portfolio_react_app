@@ -34,9 +34,8 @@ function ActuInfo({ id, title, description, date, closeModal, updateNews }) {
         throw new Error(`Erreur HTTP! Statut : ${response.status}`);
       }
 
-      updateNews();
-
       // Fermez le formulaire après l'ajout réussi
+      updateNews();
       closeModal();
     } catch (error) {
       console.error("Erreur lors de la suppression de l'actualité :", error);

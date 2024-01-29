@@ -3,15 +3,34 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+  min-height: 400px;
 }
 .loginbox__form {
   width: 70%;
-  padding: 20px;
 }
 .loginbox__form__btn {
   background-color: #bf045e;
   min-width: 20%;
   margin-top: 25px;
+}
+
+.logout-btn {
+  height: 50px;
+  border-radius: 5px;
+  padding: 5px 15px 5px 15px;
+  border: none;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope";
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #bf045e;
+  color: #ffebe2;
 }
 
 /*# sourceMappingURL=loginf.css.map */

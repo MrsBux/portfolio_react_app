@@ -21,14 +21,15 @@ function Services() {
   const faqArray = [
     {
       numberKey: "0",
-      title: "Quels sont les langages essentiels pour le développement web ?",
-      text: "Les langages de programmation clés sont HTML pour la structure, CSS pour la mise en page, et JavaScript pour l'interactivité.",
+      title:
+        "Quels sont les langages essentiels proposés par la Bux Web Compagnie pour le développement web ?",
+      text: "Les langages de programmation qui sont proposés sont des langages clés : HTML pour la structure, CSS pour la mise en page, et JavaScript pour l'interactivité. De plus ds framework/libraries comme REACT.js, Bootstrap peuvent être utilisés également. Dans le cas de la création d'une API, le langage priviligié est Javascript, tout en utilisant Node.js, Express.js ainsi qu'une base de données comme MongoDB",
     },
     {
       numberKey: "1",
       title:
-        "Quelles stratégies adopter pour optimiser la performance d'un site web ?",
-      text: "Adoptez des techniques d'optimisation telles que la compression des images, le regroupement des fichiers CSS/JS, et la mise en cache pour réduire efficacement les temps de chargement. Ces pratiques contribuent non seulement à une expérience utilisateur améliorée mais permettent également de gérer les coûts et les délais de manière pratique.",
+        "Quelles stratégies adopter pour optimiser la performance d'un site web et réussir à optimiser son placement dans les moteurs de recherches ?",
+      text: "Pour optimiser la performance de votre site web et améliorer sa visibilité sur les moteurs de recherche, incorporer des mots-clés pertinents dans un contenu de qualité est essentiel. Mettre en place une structure de site claire et une navigation rapide pour une expérience utilisateur optimale est recommandé. En complément, obtenir des backlinks de qualité renforce la crédibilité du site, contribuant ainsi à son positionnement optimal sur les moteurs de recherche et à la promotion des services offerts par votre entreprise.",
     },
     {
       numberKey: "2",
@@ -39,7 +40,7 @@ function Services() {
     {
       numberKey: "3",
       title: "Comment estimer le délai de livraison d'un projet web ?",
-      text: "L'estimation du délai dépend de la portée du projet, de la disponibilité des ressources, et des exigences spécifiques du client. Une communication claire et une planification minutieuse sont essentielles pour respecter les délais.",
+      text: "Pour estimer le délai de livraison d'un projet web, il est nécessaire de prendre en compte la portée du projet, la disponibilité des ressources et les exigences spécifiques du client. Une communication claire et une planification minutieuse sont essentielles pour respecter les délais. En règle générale, on peut estimer environ deux semaines pour la réalisation d'un site one page simple, tandis qu'un site e-commerce complexe peut nécessiter jusqu'à deux mois. Ces estimations peuvent varier en fonction des spécificités de chaque projet et des ajustements nécessaires.",
     },
   ];
 

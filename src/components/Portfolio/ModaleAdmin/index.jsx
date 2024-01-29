@@ -182,7 +182,8 @@ function ModaleAdmin({ closeModal, updateProject }) {
             <Form.Group>
               <Form.Label>Description Longue</Form.Label>
               <Form.Control
-                type="text"
+                as="textarea"
+                rows={7}
                 placeholder="Saisir la description longue"
                 value={descriptionLongue}
                 onChange={(e) => setDescriptionLongue(e.target.value)}

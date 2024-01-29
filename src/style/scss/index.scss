@@ -2,6 +2,7 @@ body {
   margin: 0px;
   width: 100%;
   font-family: "Manrope";
+  min-height: (100vh);
 }
 
 a {
@@ -14,4 +15,8 @@ h2 {
   font-size: 40px;
   font-weight: 700;
   margin: 0px;
+}
+.root,
+.all {
+  min-height: (100vh);
 }

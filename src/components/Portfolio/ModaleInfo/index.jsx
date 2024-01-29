@@ -83,10 +83,10 @@ function ModaleInfo({
         />
       </div>
       <div className="modaleinfobox__main">
-        <h3 className="modaleinfobox__main__title">{titre} titre</h3>
-        <p className="modaleinfobox__main__p">{descourte} description courte</p>
+        <h3 className="modaleinfobox__main__title">{titre}</h3>
+        <p className="modaleinfobox__main__p">{descourte}</p>
         <div className="modaleinfobox__main__carousel">
-          <Carousel fade>
+          <Carousel fade data-bs-theme="dark">
             {imagesArray.map((image, index) => (
               <Carousel.Item key={index}>
                 <img
@@ -107,7 +107,7 @@ function ModaleInfo({
           <div className="modaleinfobox__details__1__description">
             <h4 className="modaleinfobox__details__1__h">Description</h4>
             <div className="modaleinfobox__details__1__box">
-              <p>{description}</p>
+              <p className="modaleinfobox__details__1__box__p">{description}</p>
             </div>
           </div>{" "}
           <div className="modaleinfobox__details__1__lien">
@@ -115,7 +115,8 @@ function ModaleInfo({
               Répertoire Git Projet
             </h4>
             <div className="modaleinfobox__details__1__box">
-              <a href={repoGit}></a>
+              {" "}
+              <a href={repoGit}> Repo GIT</a>
             </div>
           </div>
         </div>
@@ -124,14 +125,14 @@ function ModaleInfo({
           <div className="modaleinfobox__details__2__langages">
             <h4 className="modaleinfobox__details__2__h">Langages</h4>
             <div className="modaleinfobox__details__2__box">
-              <p>{langages} </p>
+              <p className="modaleinfobox__details__2__box__p">{langages} </p>
             </div>
           </div>
 
           <div className="modaleinfobox__details__2__categorie">
             <h4 className="modaleinfobox__details__2__h">Catégories</h4>
             <div className="modaleinfobox__details__2__box">
-              <p>{categorie} </p>{" "}
+              <p className="modaleinfobox__details__2__box__p">{categorie} </p>{" "}
             </div>
           </div>
 
@@ -140,14 +141,14 @@ function ModaleInfo({
               Durée du projet en semaines
             </h4>
             <div className="modaleinfobox__details__2__box">
-              <p>{duree} </p>
+              <p className="modaleinfobox__details__2__box__p">{duree} </p>
             </div>
           </div>
 
           <div className="modaleinfobox__details__2__lien">
             <h4 className="modaleinfobox__details__2__h">Lien du projet</h4>
             <div className="modaleinfobox__details__2__box">
-              <a href={URLprojet}></a>
+              <a href={URLprojet}>Projet déployé</a>
             </div>
           </div>
         </div>

@@ -27,7 +27,7 @@ const App = () => {
   }, []); // Le tableau vide en tant que dépendance signifie que cela s'exécute une seule fois au montage
 
   return (
-    <div>
+    <div className="all">
       <Router>
         <Header />
 

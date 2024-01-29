@@ -61,7 +61,7 @@
   }
 }
 .modaleinfobox__main__p {
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 600;
 }
 .modaleinfobox__main__carousel {
@@ -88,13 +88,13 @@
   }
 }
 .modaleinfobox__details {
-  margin-top: 40px;
+  margin: 40px 0px;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
-  gap: 20%;
+  gap: 5%;
 }
 @media all and (max-width: 910px) {
   .modaleinfobox__details {
@@ -114,7 +114,7 @@
   }
 }
 .modaleinfobox__details__1 {
-  width: 40%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -132,11 +132,14 @@
 .modaleinfobox__details__1__box {
   border: #bf045e 1px solid;
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px;
   background-color: #ffebe2;
 }
+.modaleinfobox__details__1__box__p {
+  font-size: 22px;
+}
 .modaleinfobox__details__2 {
-  width: 40%;
+  width: 35%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -154,8 +157,11 @@
 .modaleinfobox__details__2__box {
   border: #bf045e 1px solid;
   border-radius: 10px;
-  padding: 10px;
+  padding: 15px;
   background-color: #ffebe2;
+}
+.modaleinfobox__details__2__box__p {
+  font-size: 22px;
 }
 .modaleinfobox__details__2__btn {
   display: flex;
