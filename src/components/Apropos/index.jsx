@@ -2,7 +2,7 @@ import "../../style/css/apropos.css";
 import selfie from "../../assets/IMG_20231028_190955.webp";
 import Btn from "../btn/boutons";
 const remoteImageURL =
-  "https://raw.githubusercontent.com/MrsBux/cv/main/selfie.png";
+  "https://raw.githubusercontent.com/MrsBux/cv/main/selfie.webp";
 
 function Apropos() {
   const downloadCV = () => {
