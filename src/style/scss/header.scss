@@ -53,12 +53,6 @@ header {
         text-decoration: none;
       }
     }
-
-    &__logo {
-      @media all and (max-width: 640px) {
-        max-width: 350px;
-      }
-    }
   }
 }
 a {
@@ -69,8 +63,11 @@ a {
   }
 }
 
-img {
+header img {
+  width: 448px;
+  height: 296px;
   @media all and (max-width: 640px) {
-    max-width: 350px;
+    height: auto;
+    max-width: 300px;
   }
 }

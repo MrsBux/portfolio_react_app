@@ -57,11 +57,6 @@ header .navbar__menu {
 header .navbar__menu__link {
   text-decoration: none;
 }
-@media all and (max-width: 640px) {
-  header .navbar__logo {
-    max-width: 350px;
-  }
-}
 
 a {
   color: #045254;
@@ -73,9 +68,14 @@ a {
   }
 }
 
+header img {
+  width: 448px;
+  height: 296px;
+}
 @media all and (max-width: 640px) {
-  img {
-    max-width: 350px;
+  header img {
+    height: auto;
+    max-width: 300px;
   }
 }
 
