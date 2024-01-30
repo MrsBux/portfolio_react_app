@@ -25,8 +25,23 @@
   align-items: flex-start;
   gap: 15px;
 }
+@media all and (min-width: 701px) and (max-width: 1050px) {
+  .actuform {
+    width: 80%;
+  }
+}
+@media all and (max-width: 700px) {
+  .actuform {
+    width: 95%;
+  }
+}
 .actuform__title {
   color: #bf045e;
+}
+@media all and (max-width: 700px) {
+  .actuform__title {
+    font-size: 30px;
+  }
 }
 .actuform__form {
   width: 100%;

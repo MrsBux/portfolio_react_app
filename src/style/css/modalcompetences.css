@@ -13,6 +13,18 @@
   background-color: #a2bdb0;
   color: #045254;
 }
+@media all and (min-width: 701px) and (max-width: 1050px) {
+  .modalContent {
+    width: 80%;
+  }
+}
+@media all and (max-width: 700px) {
+  .modalContent {
+    width: 95%;
+    padding: 0px;
+    border: 8px solid #ef6400;
+  }
+}
 .modalContent__box {
   position: absolute;
   top: 30px;
@@ -26,10 +38,12 @@
   align-items: center;
   gap: 20px;
 }
-@media all and (max-width: 610px) {
+@media all and (min-width: 701px) and (max-width: 1050px) {
   .modalContent__box {
-    right: 10px;
-    left: 10px;
+    top: 10px;
+    right: 0px;
+    bottom: 10px;
+    left: 5px;
   }
 }
 .modalContent__box__btn {
@@ -66,6 +80,13 @@
   width: fit-content;
   margin: 0px;
 }
+@media all and (max-width: 700px) {
+  .modalContent__box__top__title {
+    font-size: 30px;
+    max-width: fit-content;
+    margin: 0px;
+  }
+}
 .modalContent__box__table {
   padding: 25px 0px;
   width: 100%;
@@ -87,6 +108,7 @@
   .modalContent__box__table__li {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 0px;
     font-size: 18px;
   }
@@ -96,11 +118,23 @@
   width: 110px;
   font-weight: 600;
 }
+@media all and (max-width: 700px) {
+  .modalContent__box__table__li__title {
+    font-size: 22px;
+    font-weight: 600;
+  }
+}
 .modalContent__box__table__li__progress-bar {
   min-width: 60%;
   height: 30px;
   align-self: flex-start;
   font-weight: 600;
+}
+@media all and (max-width: 700px) {
+  .modalContent__box__table__li__progress-bar {
+    align-self: center;
+    font-weight: 600;
+  }
 }
 
 ul {

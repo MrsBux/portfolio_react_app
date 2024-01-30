@@ -21,6 +21,16 @@
   align-items: flex-start;
   gap: 15px;
 }
+@media all and (min-width: 701px) and (max-width: 1050px) {
+  .actuinfomodal {
+    width: 80%;
+  }
+}
+@media all and (max-width: 700px) {
+  .actuinfomodal {
+    width: 95%;
+  }
+}
 .actuinfomodal__btn {
   width: 100%;
   display: flex;

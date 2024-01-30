@@ -15,10 +15,8 @@ function ActuItem({ id, title, description, date, onClick }) {
             <p className="actu__box__description__p"></p>{" "}
           </div>
         </div>
-        <div>
-          <div className="actu__date">
-            <p className="actu__date__p">{formattedDate}</p>
-          </div>
+        <div className="actu__date">
+          <p className="actu__date__p">{formattedDate}</p>
         </div>
       </div>
     </article>

@@ -28,12 +28,16 @@
   font-weight: 800;
   color: #045254;
   font-size: 20px;
+  text-align: center;
 }
 .logoservice:hover .logoService__front {
   display: none;
 }
 .logoservice:hover .logoService__back {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=logoservice.css.map */

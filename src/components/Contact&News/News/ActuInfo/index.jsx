@@ -3,8 +3,10 @@ import useAuthStore from "../../../../stores/authStore.js";
 import Btn from "../../../btn/boutons.jsx";
 import "../../../../style/css/actuinfo.css";
 import apiRoutes from "../../../../utils/apiRoutes.js";
+import format from "date-fns/format";
 
 function ActuInfo({ id, title, description, date, closeModal, updateNews }) {
+  const formattedDate = format(new Date(date), "MMMM dd, yyyy");
   const { isAdminLoggedIn, login, logout } = useAuthStore();
 
   const handleDelete = async (id) => {
@@ -51,7 +53,7 @@ function ActuInfo({ id, title, description, date, closeModal, updateNews }) {
   return (
     <div className="actuinfomodal">
       <div className="actuinfomodal__btn">
-        <div>{date}</div>
+        <div>{formattedDate}</div>
         <Btn
           name=" Fermer x"
           className="actuinfomodal__btn__b"

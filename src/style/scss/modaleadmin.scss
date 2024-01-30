@@ -12,12 +12,21 @@
   color: #bf045e;
   width: 55%;
   z-index: 1000; /* Ajustez selon vos besoins */
-  max-width: 90vw; /* Ajustez selon vos besoins */
-  max-height: 90vh; /* Ajustez selon vos besoins */
+  max-width: 120vw; /* Ajustez selon vos besoins */
+  max-height: 120vh; /* Ajustez selon vos besoins */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  @media all and (min-width: 701px) and (max-width: 1050px) {
+    padding: 40px;
+    width: 90%;
+  }
+  @media all and (max-width: 700px) {
+    padding: 30px;
+    width: 98%;
+  }
 
   &__btn {
     width: 100%;

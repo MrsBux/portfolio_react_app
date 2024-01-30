@@ -93,7 +93,7 @@ function ModaleInfo({
                   alt={image.alt}
                 />
                 <Carousel.Caption>
-                  <h3>{image.caption}</h3>
+                  <h3></h3>
                 </Carousel.Caption>
               </Carousel.Item>
             ))}
@@ -108,15 +108,6 @@ function ModaleInfo({
               <p className="modaleinfobox__details__1__box__p">{description}</p>
             </div>
           </div>{" "}
-          <div className="modaleinfobox__details__1__lien">
-            <h4 className="modaleinfobox__details__1__h">
-              Répertoire Git Projet
-            </h4>
-            <div className="modaleinfobox__details__1__box">
-              {" "}
-              <a href={repoGit}> Repo GIT</a>
-            </div>
-          </div>
         </div>
 
         <div className="modaleinfobox__details__2">
@@ -144,9 +135,21 @@ function ModaleInfo({
           </div>
 
           <div className="modaleinfobox__details__2__lien">
+            <h4 className="modaleinfobox__details__2__h">
+              Répertoire Git Projet
+            </h4>
+            <div className="modaleinfobox__details__2__box">
+              {" "}
+              <a href={repoGit}> Repo GIT</a>
+            </div>
+          </div>
+
+          <div className="modaleinfobox__details__2__lien">
             <h4 className="modaleinfobox__details__2__h">Lien du projet</h4>
             <div className="modaleinfobox__details__2__box">
-              <a href={URLprojet}>Projet déployé</a>
+              <a href={URLprojet}>
+                Livrable.s (Projet déployé / document.s relatif.s au projet)
+              </a>
             </div>
           </div>
         </div>
