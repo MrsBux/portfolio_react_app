@@ -3,6 +3,10 @@ footer {
   margin: 0px;
   padding: 15px;
   position: relative;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .footerBox {
