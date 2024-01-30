@@ -17,10 +17,11 @@
   margin-top: 30px;
 }
 .filtersbox__tag__tous {
-  background-color: #078286;
+  background-color: #045254;
   margin-top: 30px;
 }
-.filtersbox__tag__plus, .filtersbox__tag__moins {
+.filtersbox__tag__plus,
+.filtersbox__tag__moins {
   margin-top: 30px;
   background-color: #bf045e;
 }
