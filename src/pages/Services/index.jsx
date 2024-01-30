@@ -1,6 +1,6 @@
 import Navigation from "../../components/Navigation/index.jsx";
 import { useEffect } from "react";
-
+import React from "react";
 import DetailsServices from "../../components/DetailsServices/index.jsx";
 import Methode from "../../components/Methode/index.jsx";
 import Menu from "../../components/Menu/index.jsx";
@@ -60,7 +60,7 @@ function Services() {
       <section className="faq">
         {faqArray.map((menu, index) => (
           <Menu
-            key={menu.index}
+            key={menu.title}
             numberKey={menu.numberKey}
             title={menu.title}
             text={menu.text}

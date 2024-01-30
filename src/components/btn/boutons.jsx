@@ -1,4 +1,5 @@
 import "../../style/css/btn.css";
+import React from "react";
 
 function Btn({ name, className, onClick }) {
   return (

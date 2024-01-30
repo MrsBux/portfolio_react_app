@@ -1,4 +1,5 @@
 import "../../style/css/apropos.css";
+import React from "react";
 import selfie from "../../assets/IMG_20231028_190955.webp";
 import Btn from "../btn/boutons";
 const remoteImageURL =
