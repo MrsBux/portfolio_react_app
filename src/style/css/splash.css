@@ -1,8 +1,9 @@
 .splashbox {
   display: flex;
   flex-direction: column;
-  justify-content: baseline;
+  justify-content: center;
   align-items: center;
+  width: fit-content;
 }
 
 /*# sourceMappingURL=splash.css.map */
