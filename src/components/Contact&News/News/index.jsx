@@ -48,7 +48,6 @@ function News() {
   };
 
   const handleActuClick = (actu) => {
-    console.log("Clic sur Actu", actu);
     setSelectedActu(actu);
     setShowModalActu(true);
   };
@@ -126,7 +125,6 @@ function News() {
           key="newactuadmin"
           name="Ajouter une actualité"
           onClick={() => {
-            console.log("Clic sur le bouton");
             setShowModalAdmin(true);
           }}
           className="news__btnadmin__b"

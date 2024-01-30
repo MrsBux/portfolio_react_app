@@ -39,9 +39,7 @@ function DetailsServices({}) {
               key={"btndservices"}
               name={"Voir les projets "}
               className="servicesdbox1__details__btn"
-              onClick={() => {
-                console.log("Clic sur le bouton !");
-              }}
+              onClick={() => {}}
             />
           </Link>
         </div>
@@ -71,9 +69,7 @@ function DetailsServices({}) {
               key={"btndservices"}
               name={"Voir les projets "}
               className="servicesdbox2__details__btn"
-              onClick={() => {
-                console.log("Clic sur le bouton !");
-              }}
+              onClick={() => {}}
             />
           </Link>
         </div>
@@ -107,9 +103,7 @@ function DetailsServices({}) {
               key={"btndservices"}
               name={"Voir les projets "}
               className="servicesdbox3__details__btn"
-              onClick={() => {
-                console.log("Clic sur le bouton !");
-              }}
+              onClick={() => {}}
             />
           </Link>
         </div>
@@ -142,9 +136,7 @@ function DetailsServices({}) {
               key={"btndservices"}
               name={"Voir les projets "}
               className="servicesdbox4__details__btn"
-              onClick={() => {
-                console.log("Clic sur le bouton !");
-              }}
+              onClick={() => {}}
             />
           </Link>
         </div>
@@ -175,9 +167,7 @@ function DetailsServices({}) {
               key={"btndservices"}
               name={"Voir les projets "}
               className="servicesdbox5__details__btn"
-              onClick={() => {
-                console.log("Clic sur le bouton !");
-              }}
+              onClick={() => {}}
             />
           </Link>
         </div>
@@ -209,9 +199,7 @@ function DetailsServices({}) {
               key={"btndservices"}
               name={"Voir les projets "}
               className="servicesdbox6__details__btn"
-              onClick={() => {
-                console.log("Clic sur le bouton !");
-              }}
+              onClick={() => {}}
             />
           </Link>
         </div>

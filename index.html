@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -10,10 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Manrope:wght@200;300;400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <script>
+      function loadGoogleFonts() {
+        var link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href =
+          "https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Manrope:wght@200;300;400;600;700;800&display=swap";
+        document.head.appendChild(link);
+      }
+
+      window.addEventListener("load", loadGoogleFonts);
+    </script>
     <title>Bux Web Compagnie</title>
     <!-- Balises Meta pour SEO -->
     <meta
@@ -28,6 +34,6 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="/src/main.jsx" async></script>
   </body>
 </html>

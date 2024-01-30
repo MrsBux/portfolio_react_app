@@ -6,7 +6,6 @@ export const MIME_TYPES = {
 
 export const convertBlobToDataURL = async (blob) => {
   const mimeType = blob.type;
-  console.log("Type MIME du blob :", mimeType); // Ajoutez cette ligne pour déboguer
 
   const extension = MIME_TYPES[mimeType];
 

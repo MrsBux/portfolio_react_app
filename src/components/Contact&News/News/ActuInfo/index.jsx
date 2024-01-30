@@ -58,7 +58,6 @@ function ActuInfo({ id, title, description, date, closeModal, updateNews }) {
           name=" Fermer x"
           className="actuinfomodal__btn__b"
           onClick={() => {
-            console.log("close click");
             closeModal();
           }}
         />{" "}

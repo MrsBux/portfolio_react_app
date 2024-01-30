@@ -25,7 +25,7 @@ function ModaleInfo({
   const handleDeleteProject = async (id) => {
     const token = window.localStorage.getItem("token");
 
-    // Vérification si un token est disponible
+    // Vérification : si un token est disponible
     if (!token) {
       throw new Error("Token manquant");
     }
@@ -34,7 +34,7 @@ function ModaleInfo({
         throw new Error("ID de l'actualité non défini.");
       }
 
-      // Envoyer la demande de suppression au serveur
+      // Envoie de la demande de suppression au serveur
       const response = await fetch(apiRoutes.singleProject(id), {
         method: "DELETE",
         headers: {
@@ -47,7 +47,7 @@ function ModaleInfo({
         throw new Error(`Erreur HTTP! Statut : ${response.status}`);
       }
 
-      // Fermez le formulaire après l'ajout réussi
+      // Fermeture du formulaire après l'ajout réussi
       updateProject();
       closeModal();
     } catch (error) {
@@ -75,7 +75,6 @@ function ModaleInfo({
           name=" Fermer x"
           className="modaleinfobox__btn__button"
           onClick={() => {
-            console.log("close click");
             closeModal();
           }}
         />

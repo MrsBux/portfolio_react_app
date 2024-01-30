@@ -90,9 +90,7 @@ function Test() {
           name={"Testez votre site !"}
           className="testContainer__form__btn"
           type="submit"
-          onClick={() => {
-            console.log("Clic sur le bouton !");
-          }}
+          onClick={() => {}}
         />
       </Form>
     </div>

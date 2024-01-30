@@ -40,9 +40,7 @@ function ServicesPlace() {
           key={"btnindex"}
           name={"En savoir plus"}
           className="service__bt__btn"
-          onClick={() => {
-            console.log("Clic sur le bouton !");
-          }}
+          onClick={() => {}}
         />
       </Link>
     </div>

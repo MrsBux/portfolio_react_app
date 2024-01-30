@@ -46,7 +46,6 @@ function CompetencesBox({ logoSrc, name }) {
             className={btn.className}
             id={btn.id}
             onClick={() => {
-              console.log("Clic sur le bouton !");
               setShowModal(true);
             }}
           />

@@ -21,16 +21,12 @@ function Loginf() {
 
   const handleconnect = async () => {
     try {
-      console.log("Clic sur le bouton !");
-
       // Création d'une instance de FormData
       const formData = new FormData(document.querySelector("form"));
 
       // Récupération des valeurs des champs
       const email = formData.get("email");
       const password = formData.get("password");
-
-      console.log("Données du formulaire avant envoi :", formData);
 
       // Votre logique de requête
       const responsemdp = await fetch(apiRoutes.login, {
@@ -44,8 +40,6 @@ function Loginf() {
       //traduction de la réponse en json
       const responseBody = await responsemdp.json();
 
-      console.log(responseBody);
-
       // condition IF pour succès ou echec de la connexion
 
       // si reponse de la requete = 200 alors c'est un sccès
@@ -53,7 +47,6 @@ function Loginf() {
         // stockage du token en local
         window.localStorage.setItem("token", responseBody.token);
         login(true);
-        console.log({ isAdminLoggedIn });
 
         //renvoie vers la page d'accueil en mode login au bout de 100ms
         // setTimeout(function () {

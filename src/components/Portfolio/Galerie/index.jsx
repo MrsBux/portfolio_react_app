@@ -61,7 +61,6 @@ function Galerie() {
   };
 
   const handleCartPClick = (project) => {
-    console.log("Clic sur CartP", project);
     setSelectedProject(project);
     setShowModalProject(true);
   };
@@ -89,8 +88,6 @@ function Galerie() {
     }
     return null;
   };
-
-  console.log("Project Array", projectArray);
 
   const renderModalAdmin = () => {
     if (showModalAdmin) {
@@ -124,7 +121,6 @@ function Galerie() {
             title={project.title}
             onClick={() => {
               handleCartPClick(project);
-              console.log("URL de l'image :", project.coverURL);
             }}
           />
         ))}
@@ -155,7 +151,6 @@ function Galerie() {
             key="ShowmodalAdmin"
             name="Ajouter un nouveau projet"
             onClick={() => {
-              console.log("Click bouton");
               setShowModalAdmin(true);
             }}
             className="galeriebox__btn__modaladmin"

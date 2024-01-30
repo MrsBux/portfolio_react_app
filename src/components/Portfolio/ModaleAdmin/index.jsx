@@ -59,8 +59,6 @@ function ModaleAdmin({ closeModal, updateProject }) {
       formDataToSend.append("duree", duree);
       formDataToSend.append("lienProjet", lienProjet);
 
-      console.log("FormData avant envoi :", formDataToSend);
-
       const response = await fetch(apiRoutes.projects, {
         method: "POST",
         headers: {
@@ -91,7 +89,6 @@ function ModaleAdmin({ closeModal, updateProject }) {
           name=" Fermer x"
           className="Modaladmin__btn__button"
           onClick={() => {
-            console.log("close click");
             closeModal();
           }}
         />
@@ -257,9 +254,7 @@ function ModaleAdmin({ closeModal, updateProject }) {
           name={"Envoyer"}
           className="contact__form__btn"
           type="submit"
-          onClick={() => {
-            console.log("Clic sur le bouton !");
-          }}
+          onClick={() => {}}
         />
       </Form>
     </div>
