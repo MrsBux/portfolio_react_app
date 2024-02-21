@@ -6,5 +6,9 @@
   width: fit-content;
   margin: auto;
 }
+.splashbox img {
+  max-width: 100%;
+  height: auto;
+}
 
 /*# sourceMappingURL=splash.css.map */
